@@ -1,6 +1,6 @@
 # Advanced Todo App
 
-Todo live link [live link](https://advanced-todo-in-react.netlify.app/).
+Todo live link: [https://advanced-todo-in-react.netlify.app/](https://advanced-todo-in-react.netlify.app/).
 
 ## Available Scripts
 
