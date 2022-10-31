@@ -1,0 +1,162 @@
+.list {
+    .list__container {
+      width: 18rem;
+      background-color: $dawn_pink;
+      border-radius: 3px;
+      padding: 0.8rem 0.6rem;
+      max-height: 27rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+      .title__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        form {
+          flex: 0.97;
+        }
+        input {
+          width: 100%;
+          border: none;
+          outline: none;
+          box-shadow: none;
+          background-color: $white;
+          box-shadow: inset 0 0 0 2px #0079bf;
+          border-radius: 3px;
+          padding: 0.2rem 0.6rem;
+          height: 2.4rem;
+          @include font_style(0.875rem, 400, 1.25rem);
+        }
+        span {
+          @include font_style(18px, 600, 24px);
+          flex: 0.97;
+          cursor: pointer;
+        }
+        .icon {
+          font-size: 1.3rem;
+          color: $jasper;
+          cursor: pointer;
+          &:hover {
+            color: red;
+          }
+        }
+        .filter__icon {
+          color: #5e6c84;
+  
+          margin-left: 0.5rem;
+          &:hover {
+            color: $black;
+          }
+        }
+        // drop down
+        .drop__down {
+          position: absolute;
+          top: 40px;
+          right: -235px;
+          z-index: 999;
+          background-color: $white;
+          width: 17rem;
+          padding: 0.4rem;
+          color: $black;
+          display: none;
+          h6 {
+            @include font_style(0.975rem, 700, 1.25rem);
+          }
+          &--main {
+            list-style: none;
+            li {
+              margin: 0.5rem;
+              cursor: pointer;
+  
+              padding: 0.3rem 0.2rem;
+              &:hover {
+                background-color: #ebecf0;
+              }
+            }
+          }
+        }
+        //   show filter
+        .show {
+          display: block;
+        }
+      }
+  
+      // main content
+      .task {
+        border-radius: 3px;
+        padding: 0.3rem;
+  
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+          rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  
+        form {
+          flex: 0.97;
+        }
+        input {
+          @include reset_button();
+          @include font_style(0.875rem, 400, 1.25rem);
+          width: 100%;
+          color: $black;
+        }
+        p {
+          color: $black;
+          @include font_style(0.875rem, 400, 1.25rem);
+          margin: 0;
+          flex: 0.94;
+        }
+        .icon {
+          cursor: pointer;
+  
+          &:first-child {
+            color: $jasper;
+            &:hover {
+              color: red;
+            }
+          }
+          &:last-child {
+            color: $persian_blue;
+          }
+        }
+      }
+      .task.open {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+          rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+          rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+      }
+      .input__container {
+        margin-top: 0.9rem;
+        textarea {
+          width: 100%;
+          resize: none;
+          @include reset_button();
+          @include font_style(0.875rem, 400, 1.25rem);
+          padding: 0.3rem;
+          border-radius: 3px;
+        }
+        //   button
+        button {
+          @include reset_button();
+          background-color: $french_blue;
+          border-radius: 3px;
+          padding: 0;
+          padding: 0.3rem 0.5rem;
+          color: $white;
+        }
+      }
+  
+      // add task
+      .add__task {
+        .left {
+          @include font_style(0.975rem, 400, 1.25rem);
+          color: #5e6c84;
+          border-radius: 3px;
+          flex: 1;
+          padding: 0.3rem 0.6rem;
+          cursor: pointer;
+          &:hover {
+            background-color: #091e4214;
+          }
+        }
+      }
+    }
+  }
+  

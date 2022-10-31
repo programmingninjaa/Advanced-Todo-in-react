@@ -1,0 +1,49 @@
+.filter__data {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    .filter__title {
+      color: $white;
+      background-color: $blur_medium_blue;
+      padding: 0.4rem 0.7rem;
+      cursor: pointer;
+      // width: 10rem;
+      border-radius: 2px;
+      h6 {
+        @include font_style(0.975rem, 400, 1.25rem);
+        margin: 0;
+        text-transform: capitalize;
+      }
+    }
+    .drop__down {
+      position: absolute;
+      top: 35px;
+      right: 0;
+      z-index: 999;
+      background-color: $white;
+      width: 17rem;
+      padding: 0.4rem;
+      color: $black;
+      display: none;
+      h6 {
+        @include font_style(0.975rem, 700, 1.25rem);
+      }
+      &--main {
+        list-style: none;
+        li {
+          margin: 0.5rem;
+          cursor: pointer;
+  
+          padding: 0.3rem 0.2rem;
+          &:hover {
+            background-color: #ebecf0;
+          }
+        }
+      }
+    }
+    //   show filter
+    .show {
+      display: block;
+    }
+  }
+  

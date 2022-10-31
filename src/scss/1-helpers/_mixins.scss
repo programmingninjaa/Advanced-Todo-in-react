@@ -1,0 +1,19 @@
+// font style function
+@mixin font_style(
+  $font_size: 1.063rem,
+  $font_weight: 300,
+  $line_height: normal
+) {
+  font-family: $font_family;
+  font-size: $font_size;
+  font-weight: $font_weight;
+  line-height: $line_height;
+}
+
+// reset button
+
+@mixin reset_button {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
