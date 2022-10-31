@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Advanced Todo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Todo live link [live link](https://advanced-todo-in-react.netlify.app/).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Install all the packages to run this app.
 
 ### `npm start`
 
